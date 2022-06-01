@@ -36,9 +36,9 @@ public class TypewriterUI : MonoBehaviour {
 	}
 
 	[Button]
-	public void StartTypewrite(string text) {
+	public Coroutine StartTypewrite(string text) {
 		writer = text;
-		StartCoroutine(nameof(DoTypewriter));
+		return StartCoroutine(nameof(DoTypewriter));
 	}
 
 	public void StopTypewrite() {

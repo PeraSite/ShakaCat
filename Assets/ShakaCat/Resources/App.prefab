@@ -133,6 +133,7 @@ Transform:
   - {fileID: 7412035078900617826}
   - {fileID: 2081709352656625486}
   - {fileID: 525152191343721669}
+  - {fileID: 5547816439991423149}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,6 +150,7 @@ GameObject:
   - component: {fileID: 6805173753399401066}
   - component: {fileID: 3579582467064652150}
   - component: {fileID: 242797506990297164}
+  - component: {fileID: 93679209348886624}
   m_Layer: 0
   m_Name: SaveSystem
   m_TagString: Untagged
@@ -200,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ed9b69f690467aa693410d3178b921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cache: {fileID: 11400000, guid: 1047b1a0329123548a5371be7ba6d2c9, type: 2}
   Format: 1
 --- !u!114 &3579582467064652150
 MonoBehaviour:
@@ -232,6 +235,24 @@ MonoBehaviour:
   Fade: {fileID: 2191863003766068657}
   AnimationTime: 1
   IsFading: {fileID: 11400000, guid: 0e84c5ba9b541034a8d58e91d724e537, type: 2}
+--- !u!114 &93679209348886624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134731860099394691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f0c2b985794d028224f7fc6dc0ac8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSlotNumber: 1
+  dontSaveInScenes: 00000000
+  loadOnStart: 0
+  saveOnQuit: 0
+  saveOnPause: 1
+  saveOnLoseFocus: 1
 --- !u!1 &2710028513968579668
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +308,62 @@ MonoBehaviour:
     SerializationNodes: []
   mainMenuMode: {fileID: 11400000, guid: 097ef7adc7542514696b7052462c9830, type: 2}
   playMode: {fileID: 11400000, guid: 8eb0168ec17eeeb4daf1feeecc145257, type: 2}
+--- !u!1 &5320449875631384838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5547816439991423149}
+  - component: {fileID: 3971390009980158897}
+  m_Layer: 0
+  m_Name: ScriptableObjectCache
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5547816439991423149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320449875631384838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 276198330416218745}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3971390009980158897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320449875631384838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6726bd15327422e9591578766882e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  ScanPath:
+  - Assets/ShakaCat/Data
+  Cache: {fileID: 11400000, guid: 1047b1a0329123548a5371be7ba6d2c9, type: 2}
 --- !u!1 &6054583944558096811
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525152191343721669}
   - component: {fileID: 2612886446287513797}
+  - component: {fileID: 2071953324050486828}
   m_Layer: 0
   m_Name: Savers
   m_TagString: Untagged
@@ -420,10 +498,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deacbd8aba5045f0b270cd9dea95a28f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_key: AtomVariables
+  m_key: AtomVariable
   m_appendSaverTypeToKey: 0
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
   Variables:
   - {fileID: 11400000, guid: cb68a76d2bc70a54b92cff4075cafd02, type: 2}
   - {fileID: 11400000, guid: 675d65721f6466c42b786a4d12171ff6, type: 2}
+--- !u!114 &2071953324050486828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6308462966422097219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437e7aa344164de395167730c084d4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: AtomList
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  List:
+  - {fileID: 11400000, guid: 4ac1fb0d7555cef42ae3a4f090e5b2fb, type: 2}

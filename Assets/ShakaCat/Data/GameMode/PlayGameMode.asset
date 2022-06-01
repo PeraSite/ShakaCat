@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: PlayGameMode
   m_EditorClassIdentifier: 
   startScene: Play
-  activeSlotID: 0
+  playScene: Play
+  activeSlotID: 1
   editorSlotID: 999

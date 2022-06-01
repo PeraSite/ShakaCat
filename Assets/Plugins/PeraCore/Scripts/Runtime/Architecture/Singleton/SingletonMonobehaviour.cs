@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PeraCore.Runtime {
 	public abstract class MonoSingleton : SerializedMonoBehaviour {
-		protected static MonoSingleton InstanceWeak { get; private set; }
+		protected static MonoSingleton InstanceWeak { get; private protected set; }
 
 		protected virtual bool KeepAlive => true;
 
@@ -29,6 +29,13 @@ namespace PeraCore.Runtime {
 	}
 
 	public abstract class MonoSingleton<T> : MonoSingleton where T : SerializedMonoBehaviour {
-		public static T Instance => InstanceWeak as T;
+		public static T Instance => FindInstance();
+
+		private static T FindInstance() {
+			if (!InstanceWeak.SafeIsUnityNull()) return InstanceWeak as T;
+
+			InstanceWeak = FindObjectOfType<T>() as MonoSingleton;
+			return InstanceWeak as T;
+		}
 	}
 }

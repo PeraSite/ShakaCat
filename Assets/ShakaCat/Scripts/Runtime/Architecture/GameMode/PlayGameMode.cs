@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 namespace ShakaCat {
 	public class PlayGameMode : GameModeBase {
-		private GameModeState _state;
+		private GameModeState _state = GameModeState.ENDED;
 
 		[SceneSelector]
-		[Tooltip("처음 게임을 시작했을 때의 위치")]
 		public string startScene;
+
+		[SceneSelector]
+		public string playScene;
 
 		public int activeSlotID = 1;
 		public int editorSlotID = 999;
@@ -22,7 +24,7 @@ namespace ShakaCat {
 
 			if (SaveSystem.storer.HasDataInSlot(activeSlotID)) {
 				var data = SaveSystem.storer.RetrieveSavedGameData(activeSlotID);
-				yield return SceneManager.LoadSceneAsync(data.sceneName);
+				yield return SceneManager.LoadSceneAsync(playScene);
 				SaveSystem.ApplySavedGameData(data);
 			} else {
 				yield return SceneManager.LoadSceneAsync(startScene);

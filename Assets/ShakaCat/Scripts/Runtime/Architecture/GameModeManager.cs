@@ -29,6 +29,8 @@ namespace ShakaCat {
 					StartCoroutine(_currentMode.OnEditorStart());
 					break;
 			}
+#else
+	_currentMode = mainMenuMode;
 #endif
 		}
 
@@ -65,7 +67,6 @@ namespace ShakaCat {
 			yield return _currentMode.OnStart();
 
 			yield return SaveSystem.sceneTransitionManager.EnterScene();
-
 			_isSwitching = false;
 		}
 	}

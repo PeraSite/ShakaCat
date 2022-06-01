@@ -32,16 +32,20 @@ public class TypewriterUI : MonoBehaviour {
 
 	[Button]
 	public void StartTypewrite() {
-		StartCoroutine(nameof(TypeWriterTMP));
+		StartCoroutine(nameof(DoTypewriter));
 	}
 
 	[Button]
 	public void StartTypewrite(string text) {
 		writer = text;
-		StartCoroutine(nameof(TypeWriterTMP));
+		StartCoroutine(nameof(DoTypewriter));
 	}
 
-	private IEnumerator TypeWriterTMP() {
+	public void StopTypewrite() {
+		StopCoroutine(nameof(DoTypewriter));
+	}
+
+	private IEnumerator DoTypewriter() {
 		_text.text = leadingCharBeforeDelay ? leadingChar : "";
 
 		yield return new WaitForSeconds(delayBeforeStart);

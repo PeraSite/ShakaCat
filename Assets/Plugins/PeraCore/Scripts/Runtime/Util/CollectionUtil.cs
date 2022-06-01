@@ -1,15 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
-using Sirenix.Utilities;
 
 namespace PeraCore.Runtime {
 	public static class CollectionUtil {
-		public static bool IsNullOrEmpty<T>(this IList<T> list) {
+		public static bool IsNullOrEmpty<T>(this IList<T>? list) {
 			if (list == null) return true;
-			if (list.Count == 0) return true;
-			return false;
+			return list.Count == 0;
 		}
 
 		public static V GetOrDefault<K, V>(this Dictionary<K, V> map, K key, V def) {
@@ -21,7 +17,7 @@ namespace PeraCore.Runtime {
 			return map[key];
 		}
 
-		public static T GetNullable<T>([ItemCanBeNull] this List<T> list, int index) {
+		public static T? GetNullable<T>(this List<T?> list, int index) {
 			return list.IsValidIndex(index) ? list[index] : default;
 		}
 
@@ -41,7 +37,7 @@ namespace PeraCore.Runtime {
 			return source.SelectMany(ts => ts);
 		}
 
-		public static T RandomOrNull<T>(this IEnumerable<T> source) {
+		public static T? RandomOrNull<T>(this IEnumerable<T> source) {
 			var list = source.ToList();
 			return list.IsNullOrEmpty() ? default : list[list.RandomIndex()];
 		}
@@ -55,7 +51,6 @@ namespace PeraCore.Runtime {
 			var list = source.ToList();
 			return UnityEngine.Random.Range(0, list.Count);
 		}
-
 
 		public static bool IsValidIndex<T>(this IEnumerable<T> source, int index) {
 			var list = source.ToList();

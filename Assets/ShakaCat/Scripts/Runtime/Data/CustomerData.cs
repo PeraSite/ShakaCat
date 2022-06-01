@@ -8,7 +8,7 @@ public class CustomerData : SerializedScriptableObject {
 
 	public CustomerType Type;
 
-	public Texture2D Portrait;
+	public Sprite Portrait;
 
 	[Multiline]
 	public List<string> Script;

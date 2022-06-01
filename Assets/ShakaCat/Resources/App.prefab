@@ -426,3 +426,4 @@ MonoBehaviour:
   m_restoreStateOnStart: 0
   Variables:
   - {fileID: 11400000, guid: cb68a76d2bc70a54b92cff4075cafd02, type: 2}
+  - {fileID: 11400000, guid: 675d65721f6466c42b786a4d12171ff6, type: 2}

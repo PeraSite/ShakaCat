@@ -8,6 +8,8 @@ namespace ShakaCat {
 		public TextMeshProUGUI Text;
 		public IntVariable Variable;
 
+		public bool IsFormatted;
+
 		public string Prefix;
 		public string Suffix;
 
@@ -24,7 +26,8 @@ namespace ShakaCat {
 		}
 
 		private void OnChanged(int value) {
-			Text.text = Prefix + value + Suffix;
+			var str = IsFormatted ? string.Format("{0:#,0}", value) : value.ToString();
+			Text.text = Prefix + str + Suffix;
 		}
 	}
 }

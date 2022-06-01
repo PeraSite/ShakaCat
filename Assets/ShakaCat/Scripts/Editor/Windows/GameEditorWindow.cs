@@ -14,7 +14,7 @@ public class GameEditorWindow : OdinMenuEditorWindow {
 		window.Show();
 	}
 
-	private const string RESOURCE_PATH = "Assets/TrickOrDrink/Data/";
+	private const string RESOURCE_PATH = "Assets/ShakaCat/Data/";
 
 	protected override OdinMenuTree BuildMenuTree() {
 		var tree = new OdinMenuTree {

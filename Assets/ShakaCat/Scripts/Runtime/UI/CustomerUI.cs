@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
+using DG.Tweening;
+using Lean.Touch;
 using PeraCore.Runtime;
 using Sirenix.Utilities;
 using UnityAtoms;
@@ -16,6 +19,12 @@ namespace ShakaCat {
 		public GameObject StartMakingButton;
 
 		public Image Portrait;
+
+		[Header("음료 제작 UI")]
+		public RectTransform DrinkMakeUI;
+
+		public float ShowX;
+		public float AnimationTime;
 
 		private void Awake() {
 			NewCustomerEvent.RegisterListener(this);
@@ -44,16 +53,33 @@ namespace ShakaCat {
 			StartCoroutine(ShowDialogue(script));
 		}
 
+		private bool _isTypewriteActive;
+		private Coroutine _typewriteTask;
+
 		private IEnumerator ShowDialogue(string script) {
-			yield return DialogueText.StartTypewrite(script);
+			_isTypewriteActive = true;
+			yield return _typewriteTask = DialogueText.StartTypewrite(script);
+			_isTypewriteActive = false;
+			StartMakingButton.SetActive(true);
+		}
+
+		public void SkipDialogue() {
+			if (!_isTypewriteActive) return;
+			StopCoroutine(_typewriteTask);
+			DialogueText.SkipTypewrite();
+			_isTypewriteActive = false;
 			StartMakingButton.SetActive(true);
 		}
 
 		private void ResetUI() {
 			DialoguePanel.SetActive(false);
 			Portrait.gameObject.SetActive(false);
-			StartMakingButton.SetActive(false);
+			// StartMakingButton.SetActive(false);
 			DialogueText.StopTypewrite();
+		}
+
+		public void ShowDrinkMakeUI() {
+			DrinkMakeUI.DOAnchorPosX(ShowX, AnimationTime);
 		}
 	}
 }

@@ -45,6 +45,11 @@ public class TypewriterUI : MonoBehaviour {
 		StopCoroutine(nameof(DoTypewriter));
 	}
 
+	public void SkipTypewrite() {
+		StopTypewrite();
+		_text.text = writer;
+	}
+
 	private IEnumerator DoTypewriter() {
 		_text.text = leadingCharBeforeDelay ? leadingChar : "";
 

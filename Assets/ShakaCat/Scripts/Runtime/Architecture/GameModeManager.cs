@@ -4,7 +4,7 @@ using PixelCrushers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ARDR {
+namespace ShakaCat {
 	public class GameModeManager : MonoSingleton<GameModeManager> {
 		public MainMenuGameMode mainMenuMode;
 		public PlayGameMode playMode;

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/ShakaCat/Scenes/MainMenu.unity
+    guid: af96cdf3c4a815140a6411a41fa80fba
+  - enabled: 1
     path: Assets/ShakaCat/Scenes/Play.unity
     guid: 8326c9a57a244f74b99e1e61901c1eed
   m_configObjects:

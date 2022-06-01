@@ -1,4 +1,4 @@
-﻿namespace ARDR {
+﻿namespace ShakaCat {
 	public enum GameModeState {
 		LOADING,
 		STARTING,

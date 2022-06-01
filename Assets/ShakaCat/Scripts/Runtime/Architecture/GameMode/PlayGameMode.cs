@@ -3,17 +3,15 @@ using PixelCrushers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ARDR {
+namespace ShakaCat {
 	public class PlayGameMode : GameModeBase {
-		[SerializeField]
 		private GameModeState _state;
 
 		[SceneSelector]
 		[Tooltip("처음 게임을 시작했을 때의 위치")]
 		public string startScene;
 
-		public int activeSlotID;
-
+		public int activeSlotID = 1;
 		public int editorSlotID = 999;
 
 		private static bool _doesSceneLoaded;

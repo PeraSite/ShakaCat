@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace ARDR {
+namespace ShakaCat {
 	public interface IGameMode {
 		IEnumerator OnStart();
 		IEnumerator OnEditorStart();

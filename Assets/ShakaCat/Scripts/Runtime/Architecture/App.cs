@@ -3,7 +3,7 @@ using Sirenix.Utilities;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace ARDR {
+namespace ShakaCat {
 	public static class App {
 		public static bool isEditor = false;
 

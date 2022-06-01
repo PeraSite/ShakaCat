@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using PixelCrushers;
 
-namespace ARDR {
+namespace ShakaCat {
 	public class MainMenuGameMode : GameModeBase {
 		[SceneSelector]
 		public string mainMenuScene;

@@ -682,6 +682,7 @@ namespace PixelCrushers
         /// <returns></returns>
         public static SavedGameData RecordSavedGameData()
         {
+            m_savedGameData ??= new SavedGameData();
             m_savedGameData.version = version;
             m_savedGameData.sceneName = GetCurrentSceneName();
             for (int i = 0; i < m_savers.Count; i++)

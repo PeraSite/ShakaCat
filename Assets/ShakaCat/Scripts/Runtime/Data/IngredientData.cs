@@ -1,5 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
 
 public class IngredientData : SerializedScriptableObject {
@@ -9,7 +8,7 @@ public class IngredientData : SerializedScriptableObject {
 	public IngredientCategory Category;
 
 	[PreviewField(100f)]
-	public Texture2D BottleImage;
+	public Sprite BottleImage;
 }
 
 public enum IngredientCategory {

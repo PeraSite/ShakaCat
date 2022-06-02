@@ -23,4 +23,4 @@ MonoBehaviour:
     SerializationNodes: []
   Name: "\uB370\uD0AC\uB77C"
   Category: 0
-  BottleImage: {fileID: 0}
+  BottleImage: {fileID: 21300000, guid: 2880fc75fe6610a4d86cfe96afc183a4, type: 3}

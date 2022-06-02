@@ -11,6 +11,7 @@ using UnityEngine.UI;
 namespace ShakaCat {
 	public class IngredientBehaviour : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 		[Header("오브젝트")]
+		public Transform Parent;
 		[OnValueChanged("Setup")]
 		public IngredientData Data;
 		public TextMeshProUGUI Name;
@@ -32,7 +33,7 @@ namespace ShakaCat {
 		}
 
 		public void OnBeginDrag(PointerEventData eventData) {
-			_instantiated = Instantiate(gameObject, transform);
+			_instantiated = Instantiate(gameObject, Parent);
 			_rect = _instantiated.GetComponent<RectTransform>();
 
 			var image = _instantiated.GetComponent<Image>();

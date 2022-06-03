@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
+using Cysharp.Threading.Tasks;
 using PeraCore.Runtime;
+using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
@@ -11,17 +13,24 @@ namespace ShakaCat {
 	public class CustomerUI : MonoBehaviour, IAtomListener<CustomerData> {
 		[Header("오브젝트")]
 		public GameObject DialoguePanel;
+
 		public TypewriterUI DialogueText;
 		public GameObject StartMakingButton;
 
 		public Image Portrait;
 
 		[Header("변수")]
+		public CustomerDataVariable CurrentCustomer;
+
 		public CustomerDataEvent NewCustomerEvent;
-		public IntVariable Money;
+
+		public DrinkDataVariable CurrentDrink;
+		public FloatVariable CompletePercent;
 
 		[Header("설정")]
-		public bool ShouldDeactivateButtonWhenDialogue;
+		public bool AlwaysShowStartMakingButton;
+
+		public float WaitAfterCustomerDisappear;
 
 		private void Awake() {
 			NewCustomerEvent.RegisterListener(this);
@@ -35,7 +44,7 @@ namespace ShakaCat {
 			NewCustomerEvent.UnregisterListener(this);
 		}
 
-		public void OnEventRaised(CustomerData item) {
+		public async void OnEventRaised(CustomerData item) {
 			if (item.SafeIsUnityNull()) {
 				ResetUI();
 				return;
@@ -45,44 +54,41 @@ namespace ShakaCat {
 			Portrait.gameObject.SetActive(true);
 
 			Portrait.sprite = item.Portrait;
-			var script = item.Script.RandomOrNull();
+			var script = item.GreetScript.RandomOrNull();
 			if (script == null) throw new Exception("Can't find script for " + item.Name);
-			StartCoroutine(ShowDialogue(script));
+			await ShowDialogue(script).ToUniTask(this);
+			StartMakingButton.SetActive(true);
 		}
-
-		private bool _isTypewriteActive;
-		private Coroutine _typewriteTask;
 
 		private IEnumerator ShowDialogue(string script) {
-			_isTypewriteActive = true;
-			yield return _typewriteTask = DialogueText.StartTypewrite(script);
-			_isTypewriteActive = false;
-
-			if (ShouldDeactivateButtonWhenDialogue)
-				StartMakingButton.SetActive(true);
+			yield return DialogueText.StartTypewrite(script);
 		}
 
+		[Button]
 		public void SkipDialogue() {
-			if (!_isTypewriteActive) return;
-			StopCoroutine(_typewriteTask);
 			DialogueText.SkipTypewrite();
-			_isTypewriteActive = false;
-
-			if (ShouldDeactivateButtonWhenDialogue)
-				StartMakingButton.SetActive(true);
 		}
 
 		private void ResetUI() {
 			DialoguePanel.SetActive(false);
 			Portrait.gameObject.SetActive(false);
 			DialogueText.StopTypewrite();
-
-			if (ShouldDeactivateButtonWhenDialogue)
-				StartMakingButton.SetActive(false);
+			StartMakingButton.SetActive(AlwaysShowStartMakingButton);
 		}
 
-		public void ShowResult(DrinkData drinkData, float percent) {
-			Money.Add(drinkData.Price);
+		public void OnServe() {
+			var script = CurrentCustomer.Value.ResultScript.RandomOrNull();
+			if (script == null) throw new Exception("Can't find greeting script!");
+			StartMakingButton.SetActive(AlwaysShowStartMakingButton);
+			StartCoroutine(ShowResultCoroutine(script));
+		}
+
+		private IEnumerator ShowResultCoroutine(string script) {
+			yield return ShowDialogue(script);
+			yield return new WaitForSecondsRealtime(WaitAfterCustomerDisappear);
+			CurrentCustomer.Value = null;
+			CurrentDrink.Value = null;
+			CompletePercent.Value = -1f;
 		}
 	}
 }

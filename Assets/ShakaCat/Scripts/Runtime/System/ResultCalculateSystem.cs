@@ -17,6 +17,7 @@ namespace ShakaCat {
 		public IntVariable Money;
 
 		public VoidEvent ResultCalculatedEvent;
+		public VoidEvent ServeEvent;
 
 		private IEnumerable<DrinkData> Drinks => Cache.Find<DrinkData>();
 
@@ -38,8 +39,8 @@ namespace ShakaCat {
 		public void Serve() {
 //TODO: 가격 계산 공식
 			Money.Add(CurrentDrink.Value.Price);
-
 			ResetResult();
+			ServeEvent.Raise();
 		}
 
 		[Button]

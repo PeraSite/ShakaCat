@@ -11,7 +11,10 @@ public class CustomerData : SerializedScriptableObject {
 	public Sprite Portrait;
 
 	[Multiline]
-	public List<string> Script;
+	public List<string> GreetScript;
+
+	[Multiline]
+	public List<string> ResultScript;
 }
 
 public enum CustomerType {

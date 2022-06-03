@@ -24,3 +24,4 @@ MonoBehaviour:
   Name: "\uD050\uB77C\uC18C"
   Category: 1
   BottleImage: {fileID: 21300000, guid: 2880fc75fe6610a4d86cfe96afc183a4, type: 3}
+  UnlockPrice: 1000

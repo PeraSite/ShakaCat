@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e100c0d28b20d18429cd0f5df1fe687a, type: 3}
+  m_Name: UnlockedIngredient
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  Cleared: {fileID: 11400000, guid: 36785f6cfba2a9c41b269f5c323f6833, type: 2}
+  _startCleared: 1
+  Added: {fileID: 11400000, guid: 0c70d472b8bd2214e8cffc68f44ddb7d, type: 2}
+  Removed: {fileID: 11400000, guid: 0bb8e684f91f5e4409ba51278a919318, type: 2}
+  list: []

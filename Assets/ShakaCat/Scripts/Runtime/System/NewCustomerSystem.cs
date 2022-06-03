@@ -37,7 +37,6 @@ namespace ShakaCat {
 		}
 
 		public void MakeNewCustomer() {
-			Debug.Log("MakeNewCustomer");
 			StartCoroutine(MakeNewCustomerCoroutine());
 		}
 

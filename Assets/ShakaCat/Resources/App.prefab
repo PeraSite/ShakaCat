@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 525152191343721669}
   - component: {fileID: 2612886446287513797}
   - component: {fileID: 2071953324050486828}
+  - component: {fileID: 7579866552072000415}
   m_Layer: 0
   m_Name: Savers
   m_TagString: Untagged
@@ -522,3 +523,24 @@ MonoBehaviour:
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
   List: []
+--- !u!114 &7579866552072000415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6308462966422097219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f61fbf261bd94fa3915f82e4fd75ac20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: UnlockedIngredient
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  UnlockedIngredients: {fileID: 11400000, guid: ba94dd4698322ed43b0f4d3205f2b24e,
+    type: 2}
+  DefaultIngredients:
+  - {fileID: 11400000, guid: cebd6c9350328d249a31ab5f27e2affe, type: 2}
+  - {fileID: 11400000, guid: b4f48d221fcf30149adf3e4ebfabc023, type: 2}

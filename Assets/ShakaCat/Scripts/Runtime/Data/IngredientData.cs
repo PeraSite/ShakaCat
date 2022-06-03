@@ -9,6 +9,8 @@ public class IngredientData : SerializedScriptableObject {
 
 	[PreviewField(100f)]
 	public Sprite BottleImage;
+
+	public int UnlockPrice;
 }
 
 public enum IngredientCategory {

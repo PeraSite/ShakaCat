@@ -68,13 +68,22 @@ namespace ShakaCat {
 		}
 
 		[ButtonGroup]
-		public void Show() {
+		public void Show(bool immediate = false) {
 			Panel.DOKill();
 			if (UseAnchorMinMax) {
-				Panel.DOAnchorMin(ShowAnchorMin, AnimationTime);
-				Panel.DOAnchorMax(ShowAnchorMax, AnimationTime);
+				if (immediate) {
+					Panel.anchorMin = ShowAnchorMin;
+					Panel.anchorMax = ShowAnchorMax;
+				} else {
+					Panel.DOAnchorMin(ShowAnchorMin, AnimationTime);
+					Panel.DOAnchorMax(ShowAnchorMax, AnimationTime);
+				}
 			} else {
-				Panel.DOAnchorPos(ShowPosition, AnimationTime);
+				if (immediate) {
+					Panel.anchoredPosition = ShowPosition;
+				} else {
+					Panel.DOAnchorPos(ShowPosition, AnimationTime);
+				}
 			}
 
 			IsShowing = true;
@@ -82,13 +91,22 @@ namespace ShakaCat {
 		}
 
 		[ButtonGroup]
-		public void Hide() {
+		public void Hide(bool immediate = false) {
 			Panel.DOKill();
 			if (UseAnchorMinMax) {
-				Panel.DOAnchorMin(HideAnchorMin, AnimationTime);
-				Panel.DOAnchorMax(HideAnchorMax, AnimationTime);
+				if (immediate) {
+					Panel.anchorMin = HideAnchorMin;
+					Panel.anchorMax = HideAnchorMax;
+				} else {
+					Panel.DOAnchorMin(HideAnchorMin, AnimationTime);
+					Panel.DOAnchorMax(HideAnchorMax, AnimationTime);
+				}
 			} else {
-				Panel.DOAnchorPos(HidePosition, AnimationTime);
+				if (immediate) {
+					Panel.anchoredPosition = HidePosition;
+				} else {
+					Panel.DOAnchorPos(HidePosition, AnimationTime);
+				}
 			}
 			IsShowing = false;
 			PopFromPanelStack();

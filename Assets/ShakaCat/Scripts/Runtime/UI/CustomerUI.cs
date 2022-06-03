@@ -3,19 +3,22 @@ using System.Collections;
 using PeraCore.Runtime;
 using Sirenix.Utilities;
 using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace ShakaCat {
 	public class CustomerUI : MonoBehaviour, IAtomListener<CustomerData> {
 		[Header("오브젝트")]
-		public CustomerDataEvent NewCustomerEvent;
-
 		public GameObject DialoguePanel;
 		public TypewriterUI DialogueText;
 		public GameObject StartMakingButton;
 
 		public Image Portrait;
+
+		[Header("변수")]
+		public CustomerDataEvent NewCustomerEvent;
+		public IntVariable Money;
 
 		[Header("설정")]
 		public bool ShouldDeactivateButtonWhenDialogue;
@@ -76,6 +79,10 @@ namespace ShakaCat {
 
 			if (ShouldDeactivateButtonWhenDialogue)
 				StartMakingButton.SetActive(false);
+		}
+
+		public void ShowResult(DrinkData drinkData, float percent) {
+			Money.Add(drinkData.Price);
 		}
 	}
 }

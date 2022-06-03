@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 206ff2b0bb0944d58169b2d979956f5e, type: 3}
-  m_Name: NewCustomerEvent
+  m_Name: CurrentCustomerChangedEvent
   m_EditorClassIdentifier: 
   _developerDescription: 
   _replayBufferSize: 0

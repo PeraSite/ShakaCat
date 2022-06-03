@@ -521,5 +521,4 @@ MonoBehaviour:
   m_appendSaverTypeToKey: 0
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
-  List:
-  - {fileID: 11400000, guid: 4ac1fb0d7555cef42ae3a4f090e5b2fb, type: 2}
+  List: []

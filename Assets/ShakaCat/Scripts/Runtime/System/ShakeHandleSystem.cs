@@ -1,20 +1,18 @@
-using System;
 using Sirenix.OdinInspector;
-using TMPro;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ShakeHandleSystem : MonoBehaviour {
-	public float ShakeTolerance;
-	public float MinShakeInterval;
+	[Header("오브젝트")]
+	public IntVariable ShakeCounter;
 
+	[Header("설정")]
+	public float ShakeTolerance;
+
+	public float MinShakeInterval;
 	public bool DetectingShake;
 
-	public TextMeshProUGUI ShakeTime;
-	public TextMeshProUGUI ShakeCounter;
-
-	private float _shakeTime;
-	private int _shakeCounter;
 	private float _timeSinceLastShake;
 	private bool _hasAccelerometer;
 
@@ -38,9 +36,7 @@ public class ShakeHandleSystem : MonoBehaviour {
 	}
 
 	public void ResetData() {
-		ShakeTime.text = "0.0초";
-		ShakeCounter.text = "0회";
-		_shakeTime = 0f;
+		ShakeCounter.Value = 0;
 		DetectingShake = false;
 	}
 
@@ -50,24 +46,15 @@ public class ShakeHandleSystem : MonoBehaviour {
 
 		var accel = Accelerometer.current.acceleration.ReadValue();
 		if (accel.magnitude > ShakeTolerance) {
-			_shakeTime += Time.deltaTime;
 			if (Time.unscaledTime >= _timeSinceLastShake + MinShakeInterval) {
-				_shakeCounter++;
+				ShakeCounter.Add(1);
 				_timeSinceLastShake = Time.unscaledTime;
 			}
-			UpdateUI();
 		}
 	}
 
 	[Button]
 	public void SimulateShake() {
-		_shakeTime += 1f;
-		_shakeCounter++;
-		UpdateUI();
-	}
-
-	private void UpdateUI() {
-		ShakeTime.text = _shakeTime.ToString("F1") + "초";
-		ShakeCounter.text = _shakeCounter + "회";
+		ShakeCounter.Add(1);
 	}
 }

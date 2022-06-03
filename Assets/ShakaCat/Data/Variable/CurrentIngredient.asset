@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   Cleared: {fileID: 11400000, guid: fc7adb19fc06f1d49abda35fbbabd09d, type: 2}
-  _startCleared: 0
+  _startCleared: 1
   Added: {fileID: 11400000, guid: 1330403b4687a1243bb7ef52be6fdb1d, type: 2}
   Removed: {fileID: 11400000, guid: 625e461603950f640bc2ab5cb593d037, type: 2}
   list:
-  - {fileID: 11400000, guid: 4379d260e2211ac4ebd6286a0f2250b5, type: 2}
-  - {fileID: 11400000, guid: 4379d260e2211ac4ebd6286a0f2250b5, type: 2}
+  - {fileID: 11400000, guid: cebd6c9350328d249a31ab5f27e2affe, type: 2}
+  - {fileID: 11400000, guid: c36b12822632b08468d292cab71a9247, type: 2}
+  - {fileID: 11400000, guid: cebd6c9350328d249a31ab5f27e2affe, type: 2}
+  - {fileID: 11400000, guid: cebd6c9350328d249a31ab5f27e2affe, type: 2}
+  - {fileID: 11400000, guid: cebd6c9350328d249a31ab5f27e2affe, type: 2}

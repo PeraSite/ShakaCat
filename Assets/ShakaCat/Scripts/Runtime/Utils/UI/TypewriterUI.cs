@@ -60,7 +60,7 @@ public class TypewriterUI : MonoBehaviour {
 	private IEnumerator DoTypewriter() {
 		IsWriting = true;
 		_text.text = leadingCharBeforeDelay ? leadingChar : "";
-
+		Debug.Log(writer);
 		if (_shouldStop) {
 			yield break;
 		}
@@ -72,17 +72,19 @@ public class TypewriterUI : MonoBehaviour {
 				yield break;
 			}
 
-			if (_text.text.Length > 0) {
-				_text.text = _text.text[..^leadingChar.Length];
-			}
+			// if (_text.text.Length > 0) {
+			// 	_text.text = _text.text[..^leadingChar.Length];
+			// }
 			_text.text += c;
-			_text.text += leadingChar;
+			Debug.Log("Adding " + c + "=" + (int) c);
+			// _text.text += leadingChar;
 			yield return new WaitForSeconds(c == '\n' ? timeBtwSentences : timeBtwChars);
 		}
 
-		if (leadingChar != "") {
-			_text.text = _text.text[..^leadingChar.Length];
-		}
+		// if (leadingChar != "") {
+		// 	_text.text = _text.text[..^leadingChar.Length];
+		// }
 		IsWriting = false;
+		yield return null;
 	}
 }

@@ -1,13 +1,18 @@
-﻿using TMPro;
+﻿using Sirenix.Utilities;
+using TMPro;
 using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 namespace ShakaCat {
 	public class DrinkMakeUI : MonoBehaviour {
 		[Header("오브젝트")]
+		public TextMeshProUGUI currentIngredientText;
+
+		[Header("변수")]
 		public IngredientDataValueList CurrentIngredient;
 
-		public TextMeshProUGUI currentIngredientText;
+		public IntVariable Money;
 
 		private void Awake() {
 			CurrentIngredient.Added.Register(OnAdded);
@@ -25,6 +30,11 @@ namespace ShakaCat {
 
 		private void OnCleared() {
 			currentIngredientText.text = "";
+		}
+
+		public void ClearCurrentIngredient() {
+			CurrentIngredient.ForEach(ing => Money.Add(ing.Price));
+			CurrentIngredient.Clear();
 		}
 	}
 }

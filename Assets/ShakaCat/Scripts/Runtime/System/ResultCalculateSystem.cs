@@ -9,14 +9,19 @@ using UnityEngine;
 
 namespace ShakaCat {
 	public class ResultCalculateSystem : MonoBehaviour {
+		[Header("변수")]
 		public DrinkDataVariable CurrentDrink;
+
 		public FloatVariable CompletePercent;
 		public IngredientDataValueList CurrentIngredient;
 		public IntVariable ShakeCounter;
-		public ScriptableObjectCache Cache;
+		public IntVariable Money;
 
+		[Header("이벤트")]
 		public VoidEvent ResultCalculatedEvent;
+
 		public VoidEvent ServeEvent;
+		public ScriptableObjectCache Cache;
 
 		private IEnumerable<DrinkData> Drinks => Cache.Find<DrinkData>();
 
@@ -30,13 +35,9 @@ namespace ShakaCat {
 			ResultCalculatedEvent.Raise();
 		}
 
-		public void ResetResult() {
+		public void Serve() {
 			CurrentIngredient.Clear();
 			ShakeCounter.Reset(true);
-		}
-
-		public void Serve() {
-			ResetResult();
 			ServeEvent.Raise();
 		}
 

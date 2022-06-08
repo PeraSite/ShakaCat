@@ -25,9 +25,9 @@ namespace ShakaCat {
 			ToastObject.DOKill(true);
 			Text.text = message;
 			DOTween.Sequence(ToastObject)
-				.Append(ToastObject.DOAnchorPosY(ShowY, AnimationTime))
+				.Append(ToastObject.DOPivotY(ShowY, AnimationTime))
 				.AppendInterval(ShowingTime)
-				.Append(ToastObject.DOAnchorPosY(HideY, AnimationTime));
+				.Append(ToastObject.DOPivotY(HideY, AnimationTime));
 		}
 
 		private void OnDisable() {

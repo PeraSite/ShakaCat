@@ -71,7 +71,7 @@ MonoBehaviour:
   NeedUnlockedIngredients:
   - {fileID: 11400000, guid: c36b12822632b08468d292cab71a9247, type: 2}
   - {fileID: 11400000, guid: 72daf612bcfd6ca4492ff5be3ba98dff, type: 2}
-  GreetScript: "\uC9ED\uC798\uD55C \uAC78\uB85C \uB2EC\uB77C\uB0E5\r!"
+  GreetScript: "\uC9ED\uC9E4\uD55C \uAC83\uC73C\uB85C \uB2EC\uB77C\uB0E5!"
   DrinkCorrectBonus: 10000
   DrinkCorrectScript: "\uB0B4\uAC00 \uC9ED\uC798\uD574\uC9C0\uB294 \uAC83 \uAC19\uB2E4\uB0E5!"
   DrinkWrongBonus: 0

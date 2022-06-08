@@ -72,7 +72,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3390989407db2b144b44685fe3b0fe87, type: 2}
   - {fileID: 11400000, guid: 00f06ad80f0af6243b4de9d640a88f7c, type: 2}
   - {fileID: 11400000, guid: 230c3cb1f1b884349a08141629a77e13, type: 2}
-  GreetScript: "\uB0A0 \uC815\uD654 \uC2DC\uCF1C\uC918..."
+  GreetScript: "\uC0AC\uC9C1\uC11C \uB0BC\uAC70\uC57C..."
   DrinkCorrectBonus: 7500
   DrinkCorrectScript: "\uC5ED\uC2DC \uC774\uAC70 \uAC00\uC9C0\uACE0\uB294 \uC548\uB418\uB098?\r"
   DrinkWrongBonus: 0

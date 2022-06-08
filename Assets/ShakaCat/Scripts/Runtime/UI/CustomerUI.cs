@@ -113,7 +113,7 @@ namespace ShakaCat {
 
 			StartMakingButton.SetActive(false);
 			SelectionButtons.ForEach(button => button.SetActive(false));
-			Money.Value = Mathf.Clamp(CurrentDrink.Value.Price + (int) tip, 0, int.MaxValue);
+			Money.Value = Mathf.Clamp(Money.Value + CurrentDrink.Value.Price + (int) tip, 0, int.MaxValue);
 			StartCoroutine(ShowResultCoroutine(script));
 		}
 

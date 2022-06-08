@@ -76,6 +76,6 @@ MonoBehaviour:
   DrinkCorrectBonus: 7500
   DrinkCorrectScript: "\uBE44\uBC14! \uD560\uB85C\uC708 \uB9AC\uBE0C\uB808!\r"
   DrinkWrongBonus: 0
-  DrinkWrongScript: "\uBBF8\uC644"
+  DrinkWrongScript: "\uC774\uAC74 \uD560\uB85C\uC708\uC5D0 \uAC78\uB9DE\uC9C0 \uC54A\uC544!"
   SawHintDrinkWrongBonus: -7500
-  SawHintDrinkWrongScript: "\uBBF8\uC644"
+  SawHintDrinkWrongScript: "\uACA8\uC6B0 \uC774 \uC815\uB3C4\uC778 \uAC70\uC57C?"

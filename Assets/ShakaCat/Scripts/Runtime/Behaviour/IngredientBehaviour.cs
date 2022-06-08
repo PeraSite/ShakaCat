@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using TMPro;
@@ -40,13 +41,11 @@ namespace ShakaCat {
 			UnlockedIngredients.Removed.Register(UpdateUnlockContainer);
 
 			UnlockPrice.text = Data.UnlockPrice + "원";
-			// UnlockedIngredients.Cleared.Register(UpdateUnlockContainer);
 		}
 
 		private void OnDisable() {
 			UnlockedIngredients.Added.Unregister(UpdateUnlockContainer);
 			UnlockedIngredients.Removed.Unregister(UpdateUnlockContainer);
-			// UnlockedIngredients.Cleared.Unregister(UpdateUnlockContainer);
 		}
 
 		private void UpdateUnlockContainer(IngredientData target) {
@@ -69,6 +68,7 @@ namespace ShakaCat {
 
 			if (Money.Value < Data.Price) {
 				ToastSystem.Instance.ShowToast("재료비가 부족합니다!");
+				return;
 			}
 
 			Money.Subtract(Data.Price);
@@ -85,29 +85,34 @@ namespace ShakaCat {
 
 		public void OnDrag(PointerEventData eventData) {
 			if (!IsUnlocked) return;
+			if (_instantiated.SafeIsUnityNull()) return;
 			_rect.position = eventData.position;
 		}
 
 		public void OnEndDrag(PointerEventData eventData) {
 			if (!IsUnlocked) return;
+			if (_instantiated.SafeIsUnityNull()) return;
 
-			Money.Add(Data.Price);
 			Destroy(_instantiated);
 			_instantiated = null;
 
 			var hovered = eventData.hovered;
-			if (hovered.Find(go => go.TryGetComponent<ShakerBehaviour>(out var shaker))) {
+			var isShaker = hovered.Any(go => go.TryGetComponent<ShakerBehaviour>(out var shaker));
+			if (isShaker) {
 				CurrentIngredient.Add(Data);
+			} else {
+				Money.Add(Data.Price);
 			}
 		}
 
 		public void Unlock() {
-			if (Money.Value > Data.UnlockPrice) {
-				Money.Subtract(Data.UnlockPrice);
-				UnlockedIngredients.Add(Data);
-			} else {
+			if (Money.Value < Data.UnlockPrice) {
 				ToastSystem.Instance.ShowToast("해금 비용이 부족합니다!");
+				return;
 			}
+
+			Money.Subtract(Data.UnlockPrice);
+			UnlockedIngredients.Add(Data);
 		}
 	}
 }

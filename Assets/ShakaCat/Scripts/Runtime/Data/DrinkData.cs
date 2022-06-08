@@ -1,14 +1,17 @@
 ﻿using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
+using System.IO;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class DrinkData : SerializedScriptableObject {
 	[Header("기본 정보")]
 	public string Name;
 
-	[MinMaxSlider(0, 10, true)]
-	public Vector2Int ShakeCount;
+	public int ShakeCount;
 
 	public Dictionary<IngredientData, int> Ingredients = new();
 
@@ -16,4 +19,11 @@ public class DrinkData : SerializedScriptableObject {
 	public Sprite Sprite;
 
 	public int Price;
+
+#if UNITY_EDITOR
+	private void OnValidate() {
+		var assetPath = AssetDatabase.GetAssetPath(GetInstanceID());
+		Name = Path.GetFileNameWithoutExtension(assetPath);
+	}
+#endif
 }

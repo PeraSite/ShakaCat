@@ -64,14 +64,8 @@ namespace ShakaCat {
 
 			var targetShakeCount = drinkData.ShakeCount;
 			var currentShakeCount = ShakeCounter.Value;
-			if (targetShakeCount.x < currentShakeCount || targetShakeCount.y > currentShakeCount) {
-				var xDiff = Mathf.Abs(targetShakeCount.x - currentShakeCount);
-				var yDiff = Mathf.Abs(targetShakeCount.y - currentShakeCount);
-
-				var diff = xDiff > yDiff ? yDiff : xDiff;
-				// Debug.Log($"{drinkData.Name}: 목표 셰이킹={targetShakeCount}, 현재={currentShakeCount}, 차이={diff}");
-				result -= diff * 5;
-			}
+			var shakeDiff = Mathf.Abs(targetShakeCount - currentShakeCount);
+			result -= shakeDiff * 10;
 
 			//TODO: 완성도 퍼센트 계산
 			result = Mathf.Clamp(result, 0, 100);

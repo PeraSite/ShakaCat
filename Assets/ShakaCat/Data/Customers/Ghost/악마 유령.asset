@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a885e02bcea40dfaabbcaf43d003aef, type: 3}
+  m_Name: "\uC545\uB9C8 \uC720\uB839"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Selections
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[CustomerSelectionData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124?"
+    - Name: Reply
+      Entry: 1
+      Data: "\uB370\uBE4C \uC0AC\uC6CC."
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124!"
+    - Name: Reply
+      Entry: 1
+      Data: "\uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\uC545\uB9C8 \uC720\uB839"
+  Type: 0
+  Portrait: {fileID: 21300000, guid: f614eedb84dc6b24a9003a4715b424b5, type: 3}
+  WantDrink: {fileID: 11400000, guid: 81cc17ffde7974341850a656c4635fd0, type: 2}
+  NeedUnlockedIngredients:
+  - {fileID: 11400000, guid: b4f48d221fcf30149adf3e4ebfabc023, type: 2}
+  - {fileID: 11400000, guid: aa8ed8e5bf6bfaa4793dc2c76b284933, type: 2}
+  GreetScript: "\uB098\uC758 \uD798... \uB098\uC758 \uC6D0\uCC9C\uC744 \uB0B4\uB194\uB77C...\r"
+  DrinkCorrectBonus: 12500
+  DrinkCorrectScript: "\uD798\uC774 \uC19F\uAD6C\uCE5C\uB2E4...!\r"
+  DrinkWrongBonus: 0
+  DrinkWrongScript: "\uD798\uC774 \uBE60\uC9C4\uB2E4...\r"
+  SawHintDrinkWrongBonus: -12500
+  SawHintDrinkWrongScript: "\uB124\uB188\uC774... \uB0A0...!\r"

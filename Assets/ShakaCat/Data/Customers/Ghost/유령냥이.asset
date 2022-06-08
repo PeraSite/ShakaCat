@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a885e02bcea40dfaabbcaf43d003aef, type: 3}
+  m_Name: "\uC720\uB839\uB0E5\uC774"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Selections
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[CustomerSelectionData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124?"
+    - Name: Reply
+      Entry: 1
+      Data: "\uC9ED\uC798\uD55C \uACE0\uC591\uC774 \uB9DB\uC73C\uB85C \uC8FC\uB77C\uB0E5!"
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124!"
+    - Name: Reply
+      Entry: 1
+      Data: "\uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\uC720\uB839\uB0E5\uC774"
+  Type: 0
+  Portrait: {fileID: 21300000, guid: d96fd4c80edc3c34e993acd750f0fbee, type: 3}
+  WantDrink: {fileID: 11400000, guid: 4f5d8ad9a8f28ea48a06ca1097f75c1a, type: 2}
+  NeedUnlockedIngredients:
+  - {fileID: 11400000, guid: c36b12822632b08468d292cab71a9247, type: 2}
+  - {fileID: 11400000, guid: 72daf612bcfd6ca4492ff5be3ba98dff, type: 2}
+  GreetScript: "\uC9ED\uC798\uD55C \uAC78\uB85C \uB2EC\uB77C\uB0E5\r!"
+  DrinkCorrectBonus: 10000
+  DrinkCorrectScript: "\uB0B4\uAC00 \uC9ED\uC798\uD574\uC9C0\uB294 \uAC83 \uAC19\uB2E4\uB0E5!"
+  DrinkWrongBonus: 0
+  DrinkWrongScript: "\uB2EC\uB2EC\uD55C\uAC70 \uC2EB\uB2E4\uB0E5...\r"
+  SawHintDrinkWrongBonus: -10000
+  SawHintDrinkWrongScript: "(\uB0E5\uB0E5\uD380\uCE58!)\n"

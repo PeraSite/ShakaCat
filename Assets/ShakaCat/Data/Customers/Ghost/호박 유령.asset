@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a885e02bcea40dfaabbcaf43d003aef, type: 3}
+  m_Name: "\uD638\uBC15 \uC720\uB839"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Selections
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[CustomerSelectionData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124?"
+    - Name: Reply
+      Entry: 1
+      Data: "\uD560\uB85C\uC708 \uC88B\uC544!"
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124!"
+    - Name: Reply
+      Entry: 1
+      Data: "\uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\uD638\uBC15 \uC720\uB839"
+  Type: 0
+  Portrait: {fileID: 21300000, guid: e78f8a11ab07de6468b529d01cc012fb, type: 3}
+  WantDrink: {fileID: 11400000, guid: 88adefb4ea617b04f9b4d1e51ef83815, type: 2}
+  NeedUnlockedIngredients:
+  - {fileID: 11400000, guid: 3390989407db2b144b44685fe3b0fe87, type: 2}
+  - {fileID: 11400000, guid: 00f06ad80f0af6243b4de9d640a88f7c, type: 2}
+  - {fileID: 11400000, guid: 230c3cb1f1b884349a08141629a77e13, type: 2}
+  GreetScript: "\uD560\uB85C\uC708 \uB9CC\uC138!\r"
+  DrinkCorrectBonus: 7500
+  DrinkCorrectScript: "\uBE44\uBC14! \uD560\uB85C\uC708 \uB9AC\uBE0C\uB808!\r"
+  DrinkWrongBonus: 0
+  DrinkWrongScript: "\uBBF8\uC644"
+  SawHintDrinkWrongBonus: -7500
+  SawHintDrinkWrongScript: "\uBBF8\uC644"

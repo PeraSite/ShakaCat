@@ -56,8 +56,8 @@ namespace ShakaCat {
 			Portrait.sprite = item.Portrait;
 			var script = item.GreetScript.RandomOrNull();
 			if (script == null) throw new Exception("Can't find script for " + item.Name);
-			await ShowDialogue(script).ToUniTask(this);
-			StartMakingButton.SetActive(true);
+			// await ShowDialogue(script).ToUniTask(this);
+			// StartMakingButton.SetActive(true);
 		}
 
 		private IEnumerator ShowDialogue(string script) {
@@ -77,10 +77,10 @@ namespace ShakaCat {
 		}
 
 		public void OnServe() {
-			var script = CurrentCustomer.Value.ResultScript.RandomOrNull();
-			if (script == null) throw new Exception("Can't find greeting script!");
-			StartMakingButton.SetActive(AlwaysShowStartMakingButton);
-			StartCoroutine(ShowResultCoroutine(script));
+			// var script = CurrentCustomer.Value.ResultScript.RandomOrNull();
+			// if (script == null) throw new Exception("Can't find greeting script!");
+			// StartMakingButton.SetActive(AlwaysShowStartMakingButton);
+			// StartCoroutine(ShowResultCoroutine(script));
 		}
 
 		private IEnumerator ShowResultCoroutine(string script) {

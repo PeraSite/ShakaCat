@@ -11,6 +11,9 @@ public class DrinkData : SerializedScriptableObject {
 	[Header("기본 정보")]
 	public string Name;
 
+	[Multiline]
+	public string Description;
+
 	public int ShakeCount;
 
 	public Dictionary<IngredientData, int> Ingredients = new();

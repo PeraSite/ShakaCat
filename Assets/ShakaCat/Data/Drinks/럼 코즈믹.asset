@@ -68,6 +68,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
   Name: "\uB7FC \uCF54\uC988\uBBF9"
+  Description: "\uBBF8\uC9C0\uC758 \uAC83\uC5D0 \uB300\uD55C \uACF5\uD3EC,\n\uCF5C\uB77C\uB97C
+    \uBCF4\uBA70 \uB290\uAF08\uB2E4."
   ShakeCount: 10
   Sprite: {fileID: 21300000, guid: 9662e65a7eae1c943af7353716373b4c, type: 3}
   Price: 1950

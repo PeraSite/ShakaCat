@@ -94,6 +94,11 @@ MonoBehaviour:
       Entry: 8
       Data: 
   Name: "\uB098\uD3F4\uB9AC\uD0C4"
+  Description: "\uB098\uD3F4\uB9AC\uD0C4 \uCE75\uD14C\uC77C \uC720\uC758\uC0AC\uD56D\r\n1.
+    \uB9C8\uC2E4 \uB54C \uC808\uB300 \uB208\uC744 \uAE5C\uBE61\uC774\uC9C0 \uB9C8\uC2DC\uC624.\r\n3.
+    \uC2E4\uC218\uB85C \uB208\uC744 \uAC10\uC73C\uC168\uB2E4\uBA74 \uB4A4\uD1B5\uC218
+    \uB4A4\uB85C \uB4E4\uB824\uC624\uB294 \uC18C\uB9AC\uAC00 \uB4E4\uB9AC\uC9C0 \uC54A\uC744
+    \uB54C\uAE4C\uC9C0 \uB208\uC744 \uAC10\uC73C\uC2DC\uC624."
   ShakeCount: 30
   Sprite: {fileID: 21300000, guid: 9662e65a7eae1c943af7353716373b4c, type: 3}
   Price: 2850

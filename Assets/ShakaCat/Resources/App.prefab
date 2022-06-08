@@ -226,7 +226,6 @@ Transform:
   - {fileID: 7412035078900617826}
   - {fileID: 2081709352656625486}
   - {fileID: 525152191343721669}
-  - {fileID: 5547816439991423149}
   - {fileID: 6805604352523563182}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -724,7 +723,7 @@ Transform:
   m_Children:
   - {fileID: 4826628391236355990}
   m_Father: {fileID: 276198330416218745}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5927718860872285731
 MonoBehaviour:
@@ -791,62 +790,6 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
---- !u!1 &5320449875631384838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5547816439991423149}
-  - component: {fileID: 3971390009980158897}
-  m_Layer: 0
-  m_Name: ScriptableObjectCache
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5547816439991423149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5320449875631384838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 276198330416218745}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3971390009980158897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5320449875631384838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6726bd15327422e9591578766882e46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  ScanPath:
-  - Assets/ShakaCat/Data
-  Cache: {fileID: 11400000, guid: 1047b1a0329123548a5371be7ba6d2c9, type: 2}
 --- !u!1 &6054583944558096811
 GameObject:
   m_ObjectHideFlags: 0

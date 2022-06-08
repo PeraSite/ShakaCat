@@ -9162,6 +9162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentCustomer: {fileID: 11400000, guid: 9653e85978a9435392fdfac7fcdc7a95, type: 2}
+  UnlockedIngredient: {fileID: 11400000, guid: ba94dd4698322ed43b0f4d3205f2b24e, type: 2}
   SOCache: {fileID: 11400000, guid: 1047b1a0329123548a5371be7ba6d2c9, type: 2}
   CustomerChangedEvent: {fileID: 11400000, guid: 58ce97acc6c1de947aa39f4885c9e46c,
     type: 2}
@@ -10468,7 +10469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   writer: "\uC548\uB155\uD558\uC138\uC694..\n\uC800\uB294 \uAF2C\uB9C8 \uC720\uB839\uC774\uC5D0\uC694...!!"
   delayBeforeStart: 0
-  timeBtwChars: 0.2
+  timeBtwChars: 0.1
   timeBtwSentences: 0.2
   leadingChar: 
   leadingCharBeforeDelay: 0

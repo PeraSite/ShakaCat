@@ -14,7 +14,6 @@ namespace ShakaCat {
 		public IngredientDataValueList CurrentIngredient;
 		public IntVariable ShakeCounter;
 		public ScriptableObjectCache Cache;
-		public IntVariable Money;
 
 		public VoidEvent ResultCalculatedEvent;
 		public VoidEvent ServeEvent;
@@ -37,8 +36,6 @@ namespace ShakaCat {
 		}
 
 		public void Serve() {
-//TODO: 가격 계산 공식
-			Money.Add(CurrentDrink.Value.Price);
 			ResetResult();
 			ServeEvent.Raise();
 		}
@@ -65,7 +62,7 @@ namespace ShakaCat {
 			var targetShakeCount = drinkData.ShakeCount;
 			var currentShakeCount = ShakeCounter.Value;
 			var shakeDiff = Mathf.Abs(targetShakeCount - currentShakeCount);
-			result -= shakeDiff * 10;
+			result -= shakeDiff;
 
 			//TODO: 완성도 퍼센트 계산
 			result = Mathf.Clamp(result, 0, 100);

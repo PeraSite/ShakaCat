@@ -67,6 +67,12 @@ namespace ShakaCat {
 		public void OnBeginDrag(PointerEventData eventData) {
 			if (!IsUnlocked) return;
 
+			if (Money.Value < Data.Price) {
+				ToastSystem.Instance.ShowToast("재료비가 부족합니다!");
+			}
+
+			Money.Subtract(Data.Price);
+
 			_instantiated = Instantiate(gameObject, transform.parent);
 			_rect = _instantiated.GetComponent<RectTransform>();
 
@@ -84,6 +90,8 @@ namespace ShakaCat {
 
 		public void OnEndDrag(PointerEventData eventData) {
 			if (!IsUnlocked) return;
+
+			Money.Add(Data.Price);
 			Destroy(_instantiated);
 			_instantiated = null;
 
@@ -97,6 +105,8 @@ namespace ShakaCat {
 			if (Money.Value > Data.UnlockPrice) {
 				Money.Subtract(Data.UnlockPrice);
 				UnlockedIngredients.Add(Data);
+			} else {
+				ToastSystem.Instance.ShowToast("해금 비용이 부족합니다!");
 			}
 		}
 	}

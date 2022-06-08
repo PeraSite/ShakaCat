@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using PeraCore.Runtime;
 using Sirenix.Utilities;
 using UnityAtoms;
@@ -11,7 +10,7 @@ namespace ShakaCat {
 		[Header("변수")]
 		public CustomerDataVariable CurrentCustomer;
 
-		public List<CustomerData> AvailableCustomers;
+		public ScriptableObjectCache SOCache;
 
 		public CustomerDataEvent CustomerChangedEvent;
 
@@ -42,7 +41,8 @@ namespace ShakaCat {
 
 		private IEnumerator MakeNewCustomerCoroutine() {
 			yield return new WaitForSecondsRealtime(DelayAfterServe);
-			var newCustomer = AvailableCustomers.RandomOrNull();
+			var availableCustomers = SOCache.Find<CustomerData>();
+			var newCustomer = availableCustomers.RandomOrNull();
 			if (newCustomer.SafeIsUnityNull()) throw new Exception("Can't find new customer");
 			CurrentCustomer.Value = newCustomer;
 		}

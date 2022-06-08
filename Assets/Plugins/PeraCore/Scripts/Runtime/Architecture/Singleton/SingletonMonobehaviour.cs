@@ -3,39 +3,36 @@ using Sirenix.Utilities;
 using UnityEngine;
 
 namespace PeraCore.Runtime {
-	public abstract class MonoSingleton : SerializedMonoBehaviour {
-		protected static MonoSingleton InstanceWeak { get; private protected set; }
+	public abstract class MonoSingleton<T> : SerializedMonoBehaviour where T : SerializedMonoBehaviour {
+		private static T _instance;
 
+		public static T Instance => FindInstance();
 		protected virtual bool KeepAlive => true;
 
 		protected virtual void Awake() {
-			if (!InstanceWeak.SafeIsUnityNull()) {
+			if (!_instance.SafeIsUnityNull()) {
 				Destroy(gameObject);
 				return;
 			}
-			InstanceWeak = this;
+			_instance = GetComponent<T>();
 			if (KeepAlive)
 				DontDestroyOnLoad(gameObject);
 		}
 
 		protected virtual void OnDestroy() {
-			InstanceWeak = null;
+			_instance = null;
 		}
 
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 		private static void ResetInstance() {
-			InstanceWeak = null;
+			_instance = null;
 		}
-	}
-
-	public abstract class MonoSingleton<T> : MonoSingleton where T : SerializedMonoBehaviour {
-		public static T Instance => FindInstance();
 
 		private static T FindInstance() {
-			if (!InstanceWeak.SafeIsUnityNull()) return InstanceWeak as T;
+			if (!_instance.SafeIsUnityNull()) return _instance;
 
-			InstanceWeak = FindObjectOfType<T>() as MonoSingleton;
-			return InstanceWeak as T;
+			_instance = FindObjectOfType(typeof(T)) as T;
+			return _instance;
 		}
 	}
 }

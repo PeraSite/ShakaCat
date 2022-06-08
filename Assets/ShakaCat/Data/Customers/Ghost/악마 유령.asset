@@ -51,7 +51,7 @@ MonoBehaviour:
       Data: "\uB124!"
     - Name: Reply
       Entry: 1
-      Data: "\uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+      Data: 
     - Name: TipMultiplier
       Entry: 4
       Data: 1

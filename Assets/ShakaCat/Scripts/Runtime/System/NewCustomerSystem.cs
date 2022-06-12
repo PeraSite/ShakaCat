@@ -28,6 +28,7 @@ namespace ShakaCat {
 
 		private void OnDisable() {
 			CustomerChangedEvent.Unregister(OnCustomerChanged);
+			CurrentCustomer.Value = null;
 		}
 
 		private void Start() {

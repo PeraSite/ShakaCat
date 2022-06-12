@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a885e02bcea40dfaabbcaf43d003aef, type: 3}
+  m_Name: "\uC880\uBE44 \uC778\uD615"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Selections
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[CustomerSelectionData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124?"
+    - Name: Reply
+      Entry: 1
+      Data: "\uCE75\uD14C\uC77C \uC918."
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124!"
+    - Name: Reply
+      Entry: 1
+      Data: 
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\uC880\uBE44 \uC778\uD615"
+  Type: 2
+  Portrait: {fileID: 21300000, guid: 81905e3b96f7d78428b5a7dc5957c754, type: 3}
+  WantDrink: {fileID: 11400000, guid: c432862fef263704d8c731d3a04c20c4, type: 2}
+  NeedUnlockedIngredients: []
+  GreetScript: "\uC751\uC560, \uB098 \uC544\uAE30 \uC880\uBE44."
+  DrinkCorrectBonus: 2500
+  DrinkCorrectScript: "(\uC880\uBE44\uAC00 \uBC15\uC0B4\uB09C\uB2E4.)"
+  DrinkWrongBonus: 0
+  DrinkWrongScript: "\uC81C\uAC00 \uACB0\uB840\uB97C \uBC94\uD588\uAD70\uC694. \uC8C4\uC1A1\uD569\uB2C8\uB2E4."
+  SawHintDrinkWrongBonus: -2500
+  SawHintDrinkWrongScript: "\uC544, \uC751\uC560\uC5D0\uC694."

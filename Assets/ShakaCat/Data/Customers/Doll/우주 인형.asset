@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a885e02bcea40dfaabbcaf43d003aef, type: 3}
+  m_Name: "\uC6B0\uC8FC \uC778\uD615"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Selections
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[CustomerSelectionData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124?"
+    - Name: Reply
+      Entry: 1
+      Data: "\uC544\uBB34\uAC83\uB3C4 \uBAA8\uB974\uB294 \uC6B0\uC8FC\uB85C \uAC00\uB824\uD558\uB2C8\uAE4C\n\uC124\uB818\uBCF4\uB2E4\uB294
+        \uB450\uB824\uC6C0\uC774 \uB108\uBB34 \uCEE4\uC694..."
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: CustomerSelectionData, Assembly-CSharp
+    - Name: Title
+      Entry: 1
+      Data: "\uB124!"
+    - Name: Reply
+      Entry: 1
+      Data: 
+    - Name: TipMultiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\uC6B0\uC8FC \uC778\uD615"
+  Type: 2
+  Portrait: {fileID: 21300000, guid: 9dc0688bd4abd294f93ec428758ba461, type: 3}
+  WantDrink: {fileID: 11400000, guid: 37200258162a37946a18ffc4533361f5, type: 2}
+  NeedUnlockedIngredients:
+  - {fileID: 11400000, guid: 3390989407db2b144b44685fe3b0fe87, type: 2}
+  - {fileID: 11400000, guid: 00f06ad80f0af6243b4de9d640a88f7c, type: 2}
+  - {fileID: 11400000, guid: 230c3cb1f1b884349a08141629a77e13, type: 2}
+  GreetScript: "\uC774\uC81C \uACE7 \uC6B0\uC8FC\uB97C \uD0D0\uC0AC\uD558\uB7EC\r\n\uAC00\uB294\uB370
+    \uB108\uBB34 \uBB34\uC11C\uC6CC\uC694."
+  DrinkCorrectBonus: 7500
+  DrinkCorrectScript: "\uC6B0\uC8FC\uBCF4\uB2E4 \uC774 \uCE75\uD14C\uC77C\uC774 \uB354
+    \uBB34\uC11C\uC6CC\uC11C\r\n\uBE68\uB9AC \uC6B0\uC8FC\uB85C \uB3C4\uB9DD\uAC08\uAC8C\uC694."
+  DrinkWrongBonus: 0
+  DrinkWrongScript: "\uC6B0\uC8FC \uAC00\uAE30 \uC2EB\uC5B4..."
+  SawHintDrinkWrongBonus: -7500
+  SawHintDrinkWrongScript: "\uC6B0\uC8FC \uB108\uBB34 \uBB34\uC11C\uC6CC...!"

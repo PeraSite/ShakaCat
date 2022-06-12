@@ -71,5 +71,5 @@ public struct CustomerSelectionData {
 public enum CustomerType {
 	GHOST,
 	ZOMBIE,
-	DRACULA,
+	DOLL,
 }

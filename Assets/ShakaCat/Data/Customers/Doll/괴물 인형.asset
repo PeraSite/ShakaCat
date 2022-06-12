@@ -36,10 +36,10 @@ MonoBehaviour:
       Data: "\uB124?"
     - Name: Reply
       Entry: 1
-      Data: "\uD53C...! \uAE09\uD574\uC694!"
+      Data: "\uD55C \uADF8\uB987\uC774 \uC544\uB2C8\uB77C \uD55C \uC794\uC778\uAC00?"
     - Name: TipMultiplier
       Entry: 4
-      Data: 0.5
+      Data: 0.8
     - Name: 
       Entry: 8
       Data: 
@@ -51,10 +51,10 @@ MonoBehaviour:
       Data: "\uB124!"
     - Name: Reply
       Entry: 1
-      Data: "\uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+      Data: 
     - Name: TipMultiplier
       Entry: 4
-      Data: 1.5
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -64,15 +64,18 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Name: "\uAC04\uD638\uC0AC \uC720\uB839"
-  Type: 0
-  Portrait: {fileID: 21300000, guid: 97d7daa6399bfd34e8d7c1147c87be53, type: 3}
-  WantDrink: {fileID: 11400000, guid: 44aaa91ead0d1d84584ee561ba6110b7, type: 2}
-  NeedUnlockedIngredients: []
-  GreetScript: "\uD53C\uAC00 \uBD80\uC871\uD574\uC694. \uC120\uC0DD\uB2D8!\r"
-  DrinkCorrectBonus: 2500
-  DrinkCorrectScript: "\uD658\uC790\uB97C \uC0B4\uB9B4 \uC218 \uC788\uACA0\uC5B4\uC694!\r"
+  Name: "\uAD34\uBB3C \uC778\uD615"
+  Type: 2
+  Portrait: {fileID: 21300000, guid: e5c7ea012a481bb44b2a80c5f88462a7, type: 3}
+  WantDrink: {fileID: 11400000, guid: b65fde3802f2d2f46b588ad023f45538, type: 2}
+  NeedUnlockedIngredients:
+  - {fileID: 11400000, guid: 61c55ee6bc4851547b5d2520238e18aa, type: 2}
+  - {fileID: 11400000, guid: cd5af3b338d80e345806017da6c51ff7, type: 2}
+  - {fileID: 11400000, guid: 0648900334fb05245920712ad44004c4, type: 2}
+  GreetScript: "\uB9DB\uC788\uB294 \uC2A4\uD30C\uAC8C\uD2F0 \uD55C \uADF8\uB987 \uC6D0\uD574!"
+  DrinkCorrectBonus: 5000
+  DrinkCorrectScript: "\uD1A0\uB9C8\uD1A0 \uB9DB\uC740 \uC548 \uB098\uB124..."
   DrinkWrongBonus: 0
-  DrinkWrongScript: "\uD658\uC790\uAC00...!\r"
-  SawHintDrinkWrongBonus: -2500
-  SawHintDrinkWrongScript: "\uD658\uC790\uAC00...\r"
+  DrinkWrongScript: "(\uC778\uD615\uCC98\uB7FC \uC6C0\uC9C1\uC774\uC9C8 \uC54A\uB294\uB2E4...)"
+  SawHintDrinkWrongBonus: -5000
+  SawHintDrinkWrongScript: "\uB108 \uBC24 \uAE38 \uC870\uC2EC\uD574!"

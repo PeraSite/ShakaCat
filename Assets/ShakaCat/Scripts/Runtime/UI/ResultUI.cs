@@ -17,6 +17,7 @@ namespace ShakaCat {
 		public GameObject Completeness;
 
 		public TextMeshProUGUI CompleteValue;
+		public TextMeshProUGUI DrinkName;
 
 		public Image ResultImage;
 
@@ -30,6 +31,7 @@ namespace ShakaCat {
 			var drinkData = CurrentDrink.Value;
 			if (drinkData.SafeIsUnityNull()) { //레시피가 이상함
 				Completeness.SetActive(false);
+				DrinkName.gameObject.SetActive(false);
 				ServeButton.SetActive(false);
 				ResultImage.sprite = InvalidRecipeImage;
 				InvalidRecipeTitle.SetActive(true);
@@ -41,10 +43,13 @@ namespace ShakaCat {
 
 			CompleteValue.text = percent.ToString("F1") + "%";
 			ResultImage.sprite = drinkData.Sprite;
+			DrinkName.text = drinkData.Name;
+
 		}
 
 
 		public void ResetResultUI() {
+			DrinkName.gameObject.SetActive(true);
 			Completeness.SetActive(true);
 			ServeButton.SetActive(true);
 			InvalidRecipeTitle.SetActive(false);

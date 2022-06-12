@@ -677,12 +677,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -727,7 +727,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -381.00052
+      value: -267.0005
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -1879,12 +1879,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -1929,7 +1929,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400.99994
+      value: -286.9999
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2015,12 +2015,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2060,12 +2060,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 451.00037
+      value: 351.0008
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400.99994
+      value: -309.99994
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2151,12 +2151,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2201,7 +2201,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -420.99985
+      value: -306.99982
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2490,12 +2490,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -2540,7 +2540,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -381.00052
+      value: -267.0005
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -3893,6 +3893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShakeCounter: {fileID: 11400000, guid: d1c7f2b0da54df84dbba13d10cd1d342, type: 2}
+  ShakeSound: {fileID: 11400000, guid: 129d6b7f646adfb4e96455050aa597d7, type: 2}
   ShakeTolerance: 3
   MinShakeInterval: 0.2
   DetectingShake: 0
@@ -4241,6 +4242,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 598c12042ec14ff4a8046fe86615a803, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &665527528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4375,12 +4388,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -4425,7 +4438,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -435
+      value: -320.99997
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -4828,12 +4841,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -4878,7 +4891,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -365.9999
+      value: -251.99988
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -5316,7 +5329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &795060240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5716,9 +5729,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 563877979}
-        m_TargetAssemblyTypeName: ShakeHandleSystem, Assembly-CSharp
-        m_MethodName: ResetData
+      - m_Target: {fileID: 753461473}
+        m_TargetAssemblyTypeName: ShakaCat.ResultCalculateSystem, Assembly-CSharp
+        m_MethodName: CalculateResult
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5728,9 +5741,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 753461473}
-        m_TargetAssemblyTypeName: ShakaCat.ResultCalculateSystem, Assembly-CSharp
-        m_MethodName: CalculateResult
+      - m_Target: {fileID: 11400000, guid: 18022c581695fe74590665aa3f7f36a1, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 563877979}
+        m_TargetAssemblyTypeName: ShakeHandleSystem, Assembly-CSharp
+        m_MethodName: EndShaking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6232,12 +6257,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -6277,12 +6302,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -357.9997
+      value: -273
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -421
+      value: -306.99997
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -7374,6 +7399,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7a6944c01b5a88444a8741eec9be430a, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &962769333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7851,12 +7888,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -7896,12 +7933,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -163
+      value: -263
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400.99994
+      value: -309.99997
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -8722,12 +8759,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -8772,7 +8809,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -366
+      value: -251.99997
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -8973,7 +9010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1279258294
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9096,6 +9133,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ShakaCat.AnimationUIPanel, Assembly-CSharp
         m_MethodName: Show
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 37360dfd63ffe9c489fe9eefe33137bf, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9785,12 +9834,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -9835,7 +9884,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -420.9998
+      value: -306.99976
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -10231,6 +10280,18 @@ MonoBehaviour:
       - m_Target: {fileID: 795060243}
         m_TargetAssemblyTypeName: ShakaCat.RecipePopup, Assembly-CSharp
         m_MethodName: ShowNextDrink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7a6944c01b5a88444a8741eec9be430a, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10811,12 +10872,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -10861,7 +10922,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -435.00015
+      value: -321.00012
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -10966,6 +11027,7 @@ MonoBehaviour:
   SOCache: {fileID: 11400000, guid: 1047b1a0329123548a5371be7ba6d2c9, type: 2}
   CustomerChangedEvent: {fileID: 11400000, guid: 58ce97acc6c1de947aa39f4885c9e46c,
     type: 2}
+  NewCustomerSound: {fileID: 11400000, guid: 4997a6b5df9383847a7a32815c280cb0, type: 2}
   DelayAfterServe: 3
 --- !u!1 &1561281686
 GameObject:
@@ -11685,7 +11747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1738462158
@@ -11769,12 +11831,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -11819,7 +11881,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -381.00052
+      value: -267.0005
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -12406,12 +12468,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -12456,7 +12518,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400.99994
+      value: -286.9999
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -12576,7 +12638,7 @@ MonoBehaviour:
   useAutomaticLayout: 1
   automaticLayoutSpacing: 0
   sizeControl: 1
-  size: {x: 2960, y: 720}
+  size: {x: 2960, y: 2433.7778}
   automaticLayoutMargins:
     Left: 0
     Right: 0
@@ -12605,7 +12667,19 @@ MonoBehaviour:
       m_Calls: []
   onPanelSelected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2d4f2882052354d478f97bad8af4dfd2, type: 2}
+        m_TargetAssemblyTypeName: SoundEffectSO, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPanelCentering:
     m_PersistentCalls:
       m_Calls: []
@@ -12996,12 +13070,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -13046,7 +13120,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -365.9999
+      value: -252
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -13763,12 +13837,12 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 382.392
+      value: 458.8704
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1186.604
+      value: 1423.9248
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
@@ -13813,7 +13887,7 @@ PrefabInstance:
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -420.99985
+      value: -306.99982
       objectReference: {fileID: 0}
     - target: {fileID: 2983478089585568533, guid: 256eccae4f4f25042a52ec86dd52dce4,
         type: 3}

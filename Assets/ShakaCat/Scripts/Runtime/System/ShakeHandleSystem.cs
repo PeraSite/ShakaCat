@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,6 +7,10 @@ using UnityEngine.InputSystem;
 public class ShakeHandleSystem : MonoBehaviour {
 	[Header("오브젝트")]
 	public IntVariable ShakeCounter;
+
+	[Header("사운드")]
+	public SoundEffectSO ShakeSound;
+
 
 	[Header("설정")]
 	public float ShakeTolerance;
@@ -15,6 +20,8 @@ public class ShakeHandleSystem : MonoBehaviour {
 
 	private float _timeSinceLastShake;
 	private bool _hasAccelerometer;
+
+	private AudioSource _shakingAudioSource;
 
 	private void Awake() {
 		_hasAccelerometer = Accelerometer.current != null;
@@ -31,13 +38,17 @@ public class ShakeHandleSystem : MonoBehaviour {
 	}
 
 	public void StartShaking() {
-		ResetData();
+		ShakeCounter.Value = 0;
 		DetectingShake = true;
+		_shakingAudioSource = ShakeSound.PlayAndReturn();
 	}
 
-	public void ResetData() {
-		ShakeCounter.Value = 0;
+	public void EndShaking() {
 		DetectingShake = false;
+		if (!_shakingAudioSource.SafeIsUnityNull()) {
+			_shakingAudioSource.Stop();
+			_shakingAudioSource = null;
+		}
 	}
 
 	private void Update() {
@@ -45,16 +56,21 @@ public class ShakeHandleSystem : MonoBehaviour {
 		if (!DetectingShake) return;
 
 		var accel = Accelerometer.current.acceleration.ReadValue();
+		_shakingAudioSource.volume = Mathf.Min(accel.magnitude / ShakeTolerance, ShakeTolerance);
 		if (accel.magnitude > ShakeTolerance) {
 			if (Time.unscaledTime >= _timeSinceLastShake + MinShakeInterval) {
-				ShakeCounter.Add(1);
+				OnShake();
 				_timeSinceLastShake = Time.unscaledTime;
 			}
 		}
 	}
 
+	private void OnShake() {
+		ShakeCounter.Add(1);
+	}
+
 	[Button]
 	public void SimulateShake() {
-		ShakeCounter.Add(1);
+		OnShake();
 	}
 }

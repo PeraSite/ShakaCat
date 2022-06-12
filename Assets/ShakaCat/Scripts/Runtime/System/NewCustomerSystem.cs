@@ -19,6 +19,9 @@ namespace ShakaCat {
 
 		public CustomerDataEvent CustomerChangedEvent;
 
+		[Header("사운드")]
+		public SoundEffectSO NewCustomerSound;
+
 		[Header("설정")]
 		public float DelayAfterServe;
 
@@ -51,9 +54,9 @@ namespace ShakaCat {
 			var newCustomer = availableCustomers.RandomOrNull();
 			if (newCustomer.SafeIsUnityNull()) throw new Exception("Can't find new customer");
 			CurrentCustomer.Value = newCustomer;
+			NewCustomerSound.Play();
 		}
 
-		[Button]
 		private IEnumerable<CustomerData> GetAvailableCustomers() {
 			var availableCustomers = SOCache.Find<CustomerData>()
 				.Where(customer => customer.NeedUnlockedIngredients.All(ing => UnlockedIngredient.Contains(ing)));

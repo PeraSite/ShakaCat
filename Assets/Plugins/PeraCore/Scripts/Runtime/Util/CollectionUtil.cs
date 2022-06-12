@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 
 namespace PeraCore.Runtime {
 	public static class CollectionUtil {
-		public static bool IsNullOrEmpty<T>(this IList<T>? list) {
+		public static bool IsNullOrEmpty<T>([CanBeNull] this IList<T> list) {
 			if (list == null) return true;
 			return list.Count == 0;
 		}
@@ -17,7 +18,8 @@ namespace PeraCore.Runtime {
 			return map[key];
 		}
 
-		public static T? GetNullable<T>(this List<T?> list, int index) {
+		[CanBeNull]
+		public static T GetNullable<T>([ItemCanBeNull] this List<T> list, int index) {
 			return list.IsValidIndex(index) ? list[index] : default;
 		}
 
@@ -37,7 +39,8 @@ namespace PeraCore.Runtime {
 			return source.SelectMany(ts => ts);
 		}
 
-		public static T? RandomOrNull<T>(this IEnumerable<T> source) {
+		[CanBeNull]
+		public static T RandomOrNull<T>(this IEnumerable<T> source) {
 			var list = source.ToList();
 			return list.IsNullOrEmpty() ? default : list[list.RandomIndex()];
 		}

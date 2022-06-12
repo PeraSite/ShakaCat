@@ -82,7 +82,7 @@ MonoBehaviour:
       Data: 
   Name: "\uC2A4\uD53C\uB9BF \uBE0C\uB9AC\uC988"
   Description: "\uC0B0\uB4E4\uC0B0\uB4E4 \uBD88\uC5B4\uC624\uB294 \uC720\uB839\uC758
-    \uD5A5\uAE30"
+    \uD5A5\uAE30..."
   ShakeCount: 20
   Sprite: {fileID: 21300000, guid: f7bba4680ecc08740a2657e60fa11fa7, type: 3}
   Price: 2400

@@ -54,8 +54,9 @@ namespace ShakaCat {
 			var ingredientCountDiff = 0;
 			foreach (var (targetIngredient, targetAmount) in targetIngredientCount) {
 				var currentAmount = currentIngredientCount[targetIngredient];
-				// Debug.Log($"{targetIngredient.Name}: 목표={targetAmount}, 현재={currentAmount}");
-				ingredientCountDiff += Mathf.Abs(targetAmount - currentAmount);
+				var countDiff = Mathf.Abs(targetAmount - currentAmount);
+				// Debug.Log($"{targetIngredient.Name}: 목표={targetAmount}, 현재={currentAmount}, 차이:{countDiff}");
+				ingredientCountDiff += countDiff;
 			}
 			result -= ingredientCountDiff * 10;
 
@@ -63,6 +64,7 @@ namespace ShakaCat {
 			var targetShakeCount = drinkData.ShakeCount;
 			var currentShakeCount = ShakeCounter.Value;
 			var shakeDiff = Mathf.Abs(targetShakeCount - currentShakeCount);
+			// Debug.Log($"쉐이킹 횟수 :: 현재 {currentShakeCount}, 목표:{targetShakeCount}, 차이:{shakeDiff}");
 			result -= shakeDiff;
 
 			//TODO: 완성도 퍼센트 계산

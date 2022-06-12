@@ -27,6 +27,9 @@ namespace ShakaCat {
 
 		public IntVariable Money;
 
+		[Header("사운드")]
+		public SoundEffectSO UnlockSound;
+		public SoundEffectSO DropSound;
 
 		[Header("설정")]
 		public float DragObjectAlpha = 0.5f;
@@ -99,6 +102,7 @@ namespace ShakaCat {
 			var hovered = eventData.hovered;
 			var isShaker = hovered.Any(go => go.TryGetComponent<ShakerBehaviour>(out var shaker));
 			if (isShaker) {
+				DropSound.Play();
 				CurrentIngredient.Add(Data);
 			} else {
 				Money.Add(Data.Price);
@@ -113,6 +117,7 @@ namespace ShakaCat {
 
 			Money.Subtract(Data.UnlockPrice);
 			UnlockedIngredients.Add(Data);
+			UnlockSound.Play();
 		}
 	}
 }

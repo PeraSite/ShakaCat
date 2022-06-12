@@ -23,10 +23,12 @@ namespace PeraCore.Runtime {
 			_instance = null;
 		}
 
+#if UNITY_EDITOR
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 		private static void ResetInstance() {
 			_instance = null;
 		}
+#endif
 
 		private static T FindInstance() {
 			if (!_instance.SafeIsUnityNull()) return _instance;

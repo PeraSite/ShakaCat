@@ -25,6 +25,8 @@ namespace ShakaCat {
 		[Header("설정")]
 		public float DelayAfterServe;
 
+		private CustomerData _lastCustomer;
+
 		private void Awake() {
 			CustomerChangedEvent.Register(OnCustomerChanged);
 		}
@@ -50,16 +52,18 @@ namespace ShakaCat {
 
 		private IEnumerator MakeNewCustomerCoroutine() {
 			yield return new WaitForSecondsRealtime(DelayAfterServe);
-			var availableCustomers = GetAvailableCustomers();
+			var availableCustomers = GetAvailableCustomers().ToList();
 			var newCustomer = availableCustomers.RandomOrNull();
 			if (newCustomer.SafeIsUnityNull()) throw new Exception("Can't find new customer");
 			CurrentCustomer.Value = newCustomer;
+			_lastCustomer = newCustomer;
 			NewCustomerSound.Play();
 		}
 
 		private IEnumerable<CustomerData> GetAvailableCustomers() {
 			var availableCustomers = SOCache.Find<CustomerData>()
-				.Where(customer => customer.NeedUnlockedIngredients.All(ing => UnlockedIngredient.Contains(ing)));
+				.Where(customer => customer.NeedUnlockedIngredients.All(ing => UnlockedIngredient.Contains(ing)))
+				.Where(customer => _lastCustomer.SafeIsUnityNull() || customer != _lastCustomer);
 			return availableCustomers;
 		}
 	}

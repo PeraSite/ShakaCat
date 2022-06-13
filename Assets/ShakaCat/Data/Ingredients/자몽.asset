@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   Name: "\uC790\uBABD"
   Category: 3
-  BottleImage: {fileID: 21300000, guid: 2880fc75fe6610a4d86cfe96afc183a4, type: 3}
+  BottleImage: {fileID: 21300000, guid: fb30abec854618a4ca5c5931c2e7e388, type: 3}
   UnlockPrice: 0
   Price: 60

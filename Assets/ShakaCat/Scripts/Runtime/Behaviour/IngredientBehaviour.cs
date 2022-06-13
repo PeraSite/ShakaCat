@@ -59,10 +59,12 @@ namespace ShakaCat {
 		public void Setup() {
 #if UNITY_EDITOR
 			if (Data.SafeIsUnityNull()) throw new Exception("Ingredient Data is null!");
-			GetComponent<Image>().sprite = Data.BottleImage;
+			var image = GetComponent<Image>();
+			image.sprite = Data.BottleImage;
 			Name.text = Data.Name;
 			gameObject.name = Data.name;
 			UnityEditor.EditorUtility.SetDirty(Name);
+			UnityEditor.EditorUtility.SetDirty(image);
 #endif
 		}
 

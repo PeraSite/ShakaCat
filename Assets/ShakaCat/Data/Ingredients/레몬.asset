@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   Name: "\uB808\uBAAC"
   Category: 3
-  BottleImage: {fileID: 21300000, guid: 2880fc75fe6610a4d86cfe96afc183a4, type: 3}
+  BottleImage: {fileID: 21300000, guid: 9a4d3a10be54dc94fbb6fa99b34fa6fb, type: 3}
   UnlockPrice: 0
   Price: 180

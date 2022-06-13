@@ -98,5 +98,5 @@ MonoBehaviour:
     \uBFDC\uC5B4\uC838 \uB098\uC628\uB2E4\uB294 \uADFC\uAC70\uC5C6\uB294 \uC18C\uBB38\uC5D0\n\uB9C8\uB140\uB4E4\uC5D0\uAC8C
     \uB9CE\uC774 \uD314\uB9B0\uB2E4."
   ShakeCount: 10
-  Sprite: {fileID: 21300000, guid: 9662e65a7eae1c943af7353716373b4c, type: 3}
+  Sprite: {fileID: 21300000, guid: 8d544e6c28316604db7417283510d44c, type: 3}
   Price: 4950

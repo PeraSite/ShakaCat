@@ -41,6 +41,7 @@ public class ShakeHandleSystem : MonoBehaviour {
 		ShakeCounter.Value = 0;
 		DetectingShake = true;
 		_shakingAudioSource = ShakeSound.PlayAndReturn();
+		_shakingAudioSource.loop = true;
 	}
 
 	public void EndShaking() {
@@ -56,8 +57,11 @@ public class ShakeHandleSystem : MonoBehaviour {
 		if (!DetectingShake) return;
 
 		var accel = Accelerometer.current.acceleration.ReadValue();
-		_shakingAudioSource.volume = Mathf.Min(accel.magnitude / ShakeTolerance, ShakeTolerance);
-		if (accel.magnitude > ShakeTolerance) {
+		var shakeAmount = accel.magnitude;
+
+		_shakingAudioSource.volume = shakeAmount <= 1 ? 0f : Mathf.Min(shakeAmount / ShakeTolerance, ShakeTolerance);
+
+		if (shakeAmount > ShakeTolerance) {
 			if (Time.unscaledTime >= _timeSinceLastShake + MinShakeInterval) {
 				OnShake();
 				_timeSinceLastShake = Time.unscaledTime;

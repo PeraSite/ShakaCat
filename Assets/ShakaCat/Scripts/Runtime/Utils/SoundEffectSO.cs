@@ -17,7 +17,7 @@ public class SoundEffectSO : ScriptableObject {
 	[Required]
 	public AudioClip[] clips;
 
-	[MinMaxSlider(0, 2)]
+	[MinMaxSlider(0, 3)]
 	[BoxGroup("config")]
 	public Vector2 volume = new Vector2(0.5f, 0.5f);
 
